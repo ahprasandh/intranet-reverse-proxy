@@ -14,3 +14,5 @@ Install the module in host and localhost
 	 >$ node client.js -h {host-url-with-port} -l {localhost-url-with-port} -p {tunnelling-server-port}
 
 Once the client is connected successfully, Tunnel URL will be printed in client, which can be used to access the localhost over intranet
+
+Each client can start a tunneling server over HTTP until the tunnel limit set by server is reached
