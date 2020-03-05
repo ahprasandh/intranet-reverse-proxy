@@ -1,0 +1,35 @@
+{
+  "name": "intranet-reverse-proxy",
+  "version": "0.0.0",
+  "description": "Create Tunneling Server for reverse proxy in intranet",
+  "homepage": "https://github.com/ahprasandh/intranet-reverse-proxy#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahprasandh/intranet-reverse-proxy.git"
+  },
+  "main": "server.js",
+  "scripts": {
+    "build": "babel server.js --out-file server.min.js --plugins transform-es2015-modules-commonjs"
+  },
+  "keywords": [
+    "reverse",
+    "proxy",
+    "intranet"
+  ],
+  "author": "ahprasandh",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
